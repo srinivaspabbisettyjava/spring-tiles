@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+        
+<tiles-definitions>
+
+<definition name="base.defination" template="/WEB-INF/pages/tiles/layout.jsp">
+  <put-attribute name="title" value="Student-Details"/>
+  <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp"/>
+  <put-attribute name="body" value=""></put-attribute>
+  <put-attribute name="menu" value="/WEB-INF/pages/tiles/menu.jsp"></put-attribute>
+  <put-attribute name="footer1" value="/WEB-INF/pages/tiles/footer.jsp"/>
+</definition>
+
+
+
+<definition name="student-login" extends="base.defination">
+   <put-attribute name="title"  value="Student Login"> </put-attribute>
+ 
+   <put-attribute name="body" value="/WEB-INF/pages/student-login.jsp"/>
+</definition>
+
+<definition name="home"  extends="base.defination">
+   <put-attribute name="title" value="Home Page"/>
+   <put-attribute name="body" value="/WEB-INF/pages/tiles/home.jsp"/>
+</definition>
+
+<definition name="coursesoffered"  extends="base.defination">
+   <put-attribute name="title" value="Courses Offered page"/>
+   <put-attribute name="body" value="/WEB-INF/pages/tiles/coursesoffered.jsp"/>
+</definition>
+
+<definition name="contactus"  extends="base.defination">
+   <put-attribute name="title" value="Contact US page"/>
+   <put-attribute name="body" value="/WEB-INF/pages/tiles/contactus.jsp"/>
+</definition>
+
+
+<definition name="success"  extends="base.defination">
+   <put-attribute name="title" value="Student Success Page"/>
+   <put-attribute name="body" value="/WEB-INF/pages/success.jsp"/>
+</definition>
+
+</tiles-definitions>

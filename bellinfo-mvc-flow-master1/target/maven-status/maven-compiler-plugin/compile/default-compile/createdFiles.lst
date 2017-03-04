@@ -1,0 +1,4 @@
+com\bellinf\batch4\mvc\model\DatabaseConnection.class
+com\bellinf\batch4\mvc\model\Student.class
+com\bellinf\batch4\mvc\StudentController.class
+com\bellinf\batch4\mvc\WelcomeController.class

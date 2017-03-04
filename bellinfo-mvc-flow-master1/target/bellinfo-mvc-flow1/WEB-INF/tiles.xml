@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+        
+<tiles-definitions>
+
+<definition name="base.defination" template="/WEB-INF/pages/tiles/layout.jsp">
+  <put-attribute name="title" value=""/>
+  <put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp"/>
+  <put-attribute name="body" value=""></put-attribute>
+  <put-attribute name="footer1" value="/WEB-INF/pages/tiles/footer.jsp"/>
+</definition>
+
+
+<definition name="student-login" extends="base.defination">
+   <put-attribute name="title" value="Student Login Page"/>
+   <put-attribute name="body" value="/WEB-INF/pages/student-login.jsp"/>
+</definition>
+
+
+<definition name="success"  extends="base.defination">
+   <put-attribute name="title" value="Student Success Page"/>
+   <put-attribute name="body" value="/WEB-INF/pages/success.jsp"/>
+</definition>
+
+</tiles-definitions>
